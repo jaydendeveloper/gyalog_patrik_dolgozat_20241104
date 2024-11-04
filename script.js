@@ -15,17 +15,17 @@ function printHtml(numberArr){
 printHtml(numbers)
 
 button.addEventListener("click", ()=> {
-    let numbers2 = [];
+    let result = [];
 
-    while(numbers2.length < 9){
-        const rand = Math.floor(Math.random() * (numbers.length -  1 + 1) + 1);
-        const number = numbers[rand-1]
+    while(result.length < 9){
+        const rand = Math.floor(Math.random() * (numbers.length));
+        const number = numbers[rand];
         
-        if(!numbers2.includes(number)) {
-            numbers2.push(number);
+        if(!result.includes(number)) {
+            result.push(number);
         }
     }
 
 
-    printHtml(numbers2)
+    printHtml(result)
 })
