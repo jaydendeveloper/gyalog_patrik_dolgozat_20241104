@@ -18,6 +18,7 @@ body{
 .grid-item{
   padding: 5px;
   border: orange 5px solid;
+  text-align: center;
 }
 
 #container{
